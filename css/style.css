@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+*{ font-family: 'Roboto Condensed'; }
+
+body
+{ background: linear-gradient(to right, #f39562, #f35257); }
+
+button:hover
+{ cursor: pointer ;}
+
+
+/* NAV BAR */
+
+    /* CONSTANT */
+        .Navbar ul
+        {
+            background-color: #ffffff;
+            list-style-type: none;
+
+            border-radius: 20px;
+            border-width: 20px;
+
+            padding: 0px;
+            margin: 0px;
+
+            overflow: hidden;
+
+            box-shadow: 0px 0px 10px #00000050;
+
+            opacity: 0;
+            animation: NavBarPopUp .3s .1s ease-in-out forwards;
+        }
+        @keyframes NavBarPopUp
+        {
+            from
+            {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to
+            {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+
+        .Navbar button
+        {
+            color: #f35257;
+            text-decoration: none;
+
+            padding: 25px;
+            margin: auto;
+
+            display: block;
+            text-align: center;
+
+            border-width: 0px;
+            background: none;
+
+            transition: background-color .1s, color .1s, box-shadow .1s;
+        }
+        .Navbar button:hover
+        {
+            background-color: #f35257;
+            color: #ffffff;
+            box-shadow: 0px 0px 5px #00000070;
+        }
+
+        .Navbar a
+        {
+            padding: 10vh;
+            margin: 0px;
+
+            color: #f35257;
+        }
+    
+    /* LANDSCAPE */
+        @media (orientation: landscape)
+        {
+            .Navbar li { float: right; }
+        }
+    
+    /* PORTRAIT */
+        @media (orientation: portrait)
+        {
+            .Navbar ul
+            {
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+/* END NAV BAR */
