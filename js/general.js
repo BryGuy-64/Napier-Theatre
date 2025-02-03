@@ -1,20 +1,3 @@
-//BUTTON SFX
-    document.addEventListener("DOMContentLoaded", ()=>
-    {
-        const buttons = document.querySelectorAll("button");
-        const sound = new Audio("../sounds/button - hover.mp3");
-
-        buttons.forEach(button => 
-        {
-            button.addEventListener("mouseenter", ()=>
-            {
-                sound.currentTime = 0;
-                sound.play();
-            })
-        });
-    });
-
-
 //IMPORT NAV BAR
     function importNavBar()
     {
