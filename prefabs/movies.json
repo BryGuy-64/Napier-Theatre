@@ -1,0 +1,18 @@
+[
+    {
+        "poster": "https://example.com/poster1.jpg",
+        "name": "Movie Title 1",
+        "description": "An exciting movie about adventures.",
+        "genre": "Action",
+        "ageRating": "PG-13",
+        "length": "2h 10m"
+    },
+    {
+        "poster": "https://example.com/poster2.jpg",
+        "name": "Movie Title 2",
+        "description": "A touching drama about life and loss.",
+        "genre": "Drama",
+        "ageRating": "R",
+        "length": "1h 50m"
+    }
+]
