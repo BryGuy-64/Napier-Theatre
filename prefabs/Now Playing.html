@@ -46,10 +46,15 @@
                     movieElement.classList.add('movie');
                     movieElement.innerHTML = `
                         <img class="poster" src="${movie.poster}" alt="${movie.name} Poster">
+
                         <h2><a href="#">${movie.name}</a></h2>
+
                         <p>${movie.description}</p>
+
                         <p>${movie.genre}</p>
+
                         <p>${movie.ageRating}</p>
+
                         <p>${movie.length}</p>
                     `;
                     container.appendChild(movieElement);
