@@ -7,7 +7,7 @@
 
     <style>
 
-        body { font-family: Arial, sans-serif; }
+        body { font-family: 'Roboto Condensed'; }
 
         .movie
         { 
@@ -27,6 +27,7 @@
         {
           width: 150px;
           border-radius: 20px;
+          box-shadow: 0px 0px 5px #00000050;
         }
 
     </style>
@@ -40,6 +41,7 @@
     <div id="moviesContainer" style="display: flex; justify-content: center;"></div>
 
     <script>
+
         fetch('movies.json')
             .then(response => response.json())
             .then(movies => {
@@ -48,24 +50,24 @@
                     const movieElement = document.createElement('div');
                     movieElement.classList.add('movie');
                     movieElement.innerHTML = `
+
                         <img class="poster" src="${movie.poster}" alt="${movie.name} Poster">
 
                         <h2><b style="color: #f35257;>${movie.name}</b></h2>
 
                         <p style="color: #6ee5c6;">${movie.description}</p>
 
-                        <p>${movie.genre}</p>
+                        <p style="color: #6ee5c6;">${movie.genre}</p>
 
-                        <div>
+                        <p style="color: #6ee5c6;">${movie.length}</p>
                           
-                          <p>${movie.length}</p>
-                          
-                          <div style="background-color: #f25256; border-radius: 50%; box-shadow: 0px 0px 5px #00000050">${movie.ageRating}</div>
+                        <div style="background-color: #f25256; border-radius: 50%; box-shadow: 0px 0px 5px #00000050; width: 50%; aspect-ratio: 1/1; color: #ffffff">${movie.ageRating}</div>
                     `;
                     container.appendChild(movieElement);
                 });
             })
-            .catch(error => console.error('Error loading movies:', error));
+            .catch(error => console.error('NOW PLAYING ERROR: ', error));
+
     </script>
   
   </body>
