@@ -9,7 +9,15 @@
     <style>
 
         body { font-family: Arial, sans-serif; }
-        .movie { margin-bottom: 20px; border-bottom: 1px solid #ccc; padding-bottom: 10px; }
+
+        .movie
+        { 
+          border-radius: 20px;
+          box-shadow: 0px 0px 20px #00000050;
+
+          margin: 10px;
+          padding: 10px;
+        }
 
         .poster 
         {
@@ -39,10 +47,10 @@
                     movieElement.innerHTML = `
                         <img class="poster" src="${movie.poster}" alt="${movie.name} Poster">
                         <h2><a href="#">${movie.name}</a></h2>
-                        <p><strong>Description:</strong> ${movie.description}</p>
-                        <p><strong>Genre:</strong> ${movie.genre}</p>
-                        <p><strong>Age Rating:</strong> ${movie.ageRating}</p>
-                        <p><strong>Length:</strong> ${movie.length}</p>
+                        <p>${movie.description}</p>
+                        <p>${movie.genre}</p>
+                        <p>${movie.ageRating}</p>
+                        <p>${movie.length}</p>
                     `;
                     container.appendChild(movieElement);
                 });
