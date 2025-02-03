@@ -16,8 +16,10 @@
           border-width: 0px;
           box-shadow: 0px 0px 15px #00000050;
 
-          margin: 10px;
+          margin: 0 auto;
           padding: 10px;
+
+          float: left;
         }
 
         .poster 
@@ -34,7 +36,7 @@
 
 
   <body>
-    <div id="moviesContainer"></div>
+    <div id="moviesContainer" style="align-items: center;"></div>
 
     <script>
         fetch('movies.json')
@@ -47,7 +49,9 @@
                     movieElement.innerHTML = `
                         <img class="poster" src="${movie.poster}" alt="${movie.name} Poster">
 
-                        <h2><a href="#">${movie.name}</a></h2>
+                        <h2><a style="color: #f35257;>
+                        ${movie.name}
+                        </a></h2>
 
                         <p style="color: #f35257;">
                         ${movie.description}</p>
