@@ -1,6 +1,6 @@
 [
     {
-        "poster": "images/posters/poster.png",
+        "poster": "../images/posters/poster.png",
         "name": "Movie Title 1",
         "description": "An exciting movie about adventures.",
         "genre": "Action",
@@ -8,7 +8,7 @@
         "length": "2h 10m"
     },
     {
-        "poster": "images/posters/poster.png",
+        "poster": "../images/posters/poster.png",
         "name": "Movie Title 2",
         "description": "A touching drama about life and loss.",
         "genre": "Drama",
