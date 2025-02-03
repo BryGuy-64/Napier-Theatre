@@ -4,7 +4,7 @@
     {
         text-align: center;
         color: #ffffff;
-        text-shadow: 0px 0px 10px #f35257;
+        text-shadow: 0px 0px 10px #00000050;
 
         animation: PopUp .3s .3s ease-in-out;
     }
