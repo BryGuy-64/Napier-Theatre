@@ -34,7 +34,7 @@
 
 
   <body>
-    <div id="moviesContainer" class="movie"></div>
+    <div id="moviesContainer"></div>
 
     <script>
         fetch('movies.json')
@@ -49,9 +49,11 @@
 
                         <h2><a href="#">${movie.name}</a></h2>
 
-                        <p>${movie.description}</p>
+                        <p style="color: #f35257;">
+                        ${movie.description}</p>
 
-                        <p>${movie.genre}</p>
+                        <p>
+                        ${movie.genre}</p>
 
                         <p>${movie.ageRating}</p>
 
