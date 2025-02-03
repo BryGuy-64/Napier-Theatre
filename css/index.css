@@ -1,6 +1,12 @@
 /* THIS STYLESHEET IS FOR THE HOME PAGE ONLY */
 
-
+    h1
+    {
+        text-align: center;
+        color: #ffffff;
+        text-shadow: 0px 0px 10px #f35257;
+    }
+    
 /* CASH NOTICE */
     
     div.CashNotice
