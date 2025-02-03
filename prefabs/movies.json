@@ -1,16 +1,16 @@
 [
     {
-        "poster": "/images/posters/poster.png",
-        "name": "Movie Title 1",
-        "description": "An exciting movie about adventures.",
+        "poster": "../images/posters/poster.png",
+        "name": "Doggo & Pie",
+        "description": "A Fluffy Doggo eats a pie",
         "genre": "Action",
         "ageRating": "PG-13",
         "length": "2h 10m"
     },
     {
-        "poster": "/images/posters/poster.png",
-        "name": "Movie Title 2",
-        "description": "A touching drama about life and loss.",
+        "poster": "../images/posters/poster.png",
+        "name": "Toy Story 732",
+        "description": "Pixar Wants More Money",
         "genre": "Drama",
         "ageRating": "R",
         "length": "1h 50m"

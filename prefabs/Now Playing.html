@@ -16,10 +16,11 @@
           border-width: 0px;
           box-shadow: 0px 0px 15px #00000050;
 
-          margin: 0 auto;
+          margin: 20px;
           padding: 10px;
 
           float: left;
+          text-align: center;
         }
 
         .poster 
@@ -49,19 +50,17 @@
                     movieElement.innerHTML = `
                         <img class="poster" src="${movie.poster}" alt="${movie.name} Poster">
 
-                        <h2><a style="color: #f35257;>
-                        ${movie.name}
-                        </a></h2>
+                        <h2><b style="color: #f35257;>${movie.name}</b></h2>
 
-                        <p style="color: #f35257;">
-                        ${movie.description}</p>
+                        <p style="color: #6ee5c6;">${movie.description}</p>
 
-                        <p>
-                        ${movie.genre}</p>
+                        <p>${movie.genre}</p>
 
-                        <p>${movie.ageRating}</p>
-
-                        <p>${movie.length}</p>
+                        <div>
+                          
+                          <p>${movie.length}</p>
+                          
+                          <div style="background-color: #f25256; border-radius: 50%; box-shadow: 0px 0px 5px #00000050">${movie.ageRating}</div>
                     `;
                     container.appendChild(movieElement);
                 });
