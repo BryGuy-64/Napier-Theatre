@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Movies</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .movie { margin-bottom: 20px; border-bottom: 1px solid #ccc; padding-bottom: 10px; }
+        .poster { width: 150px; }
+    </style>
+
+  </head>
+
+
+  <body>
+    <div id="moviesContainer"></div>
+
+    <script>
+        fetch('movies.json')
+            .then(response => response.json())
+            .then(movies => {
+                const container = document.getElementById('moviesContainer');
+                movies.forEach(movie => {
+                    const movieElement = document.createElement('div');
+                    movieElement.classList.add('movie');
+                    movieElement.innerHTML = `
+                        <img class="poster" src="${movie.poster}" alt="${movie.name} Poster">
+                        <h2><a href="#">${movie.name}</a></h2>
+                        <p><strong>Description:</strong> ${movie.description}</p>
+                        <p><strong>Genre:</strong> ${movie.genre}</p>
+                        <p><strong>Age Rating:</strong> ${movie.ageRating}</p>
+                        <p><strong>Length:</strong> ${movie.length}</p>
+                    `;
+                    container.appendChild(movieElement);
+                });
+            })
+            .catch(error => console.error('Error loading movies:', error));
+    </script>
+  
+  </body>
+</html>
