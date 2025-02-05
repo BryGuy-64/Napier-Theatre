@@ -54,11 +54,8 @@
 
                         <img class="poster" src="${movie.poster}" alt="${movie.name} Poster">
 
-                        <p style="color: #f35257;">
-                        ${movie.name}</p>
-
-                        <p style="color: #f39463;">
-                        ${movie.description}</p>
+                        <p style="color: #f35257;"><b>
+                        ${movie.name}</b></p>
 
                         <p style="color: #f39463;">
                         ${movie.genre}</p>
@@ -66,7 +63,7 @@
                         <p style="color: #f39463;">
                         ${movie.length}</p>
                           
-                        <div style="background-color: #f25256; border-radius: 50%; box-shadow: 0px 0px 5px #00000050; width: 20%; aspect-ratio: 1/1; color: #; align-items: center; text-align: center;">${movie.ageRating}</div>
+                        <div style="background-color: #f25256; border-radius: 50%; box-shadow: 0px 0px 5px #00000050; width: 35ed%; aspect-ratio: 1/1; color: #ffffff; align-items: center; text-align: center;">${movie.ageRating}</div>
                     `;
                     container.appendChild(movieElement);
                 });
